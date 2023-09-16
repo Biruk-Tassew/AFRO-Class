@@ -7,7 +7,7 @@ const SERVER_URL = process.env.SERVER_URL || 'http://localhost:'
 const PORT = process.env.PORT || 5000
 const EMAIL = process.env.EMAIL 
 const PASSWORD = process.env.PASSWORD 
-const JWT_SECRET = process.env.JWT_SECRET
+const JWT_SECRET = process.env.JWT_SECRET || ""
 
 const configs = {
   DB_URI,

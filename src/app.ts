@@ -18,7 +18,10 @@ import express, {
   app.use(cookieParser());
   app.use(expressupload());
   app.use(cors());
+
   
+app.use("/api/v1/student", routes.studentRoutes);
+app.use("/api/v1/student", routes.teacherRoutes);
   
   app.get("/", (req, res) => {
     return res.send("Welcome to AFRO Class!");
